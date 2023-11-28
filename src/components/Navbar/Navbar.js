@@ -6,12 +6,9 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import Modal from "react-modal";
-import { toast } from "react-toastify";
 import logo from "../../components/images/logo.png";
 import styles from "./Navbar.module.css";
 import SignUpForm from "./SignUp";
-
-import "react-toastify/dist/ReactToastify.css";
 import axios from "axios"; 
 
 const Navbar = () => {
@@ -44,10 +41,7 @@ const Navbar = () => {
   };
 
   const handleSignUpSuccess = () => {
-    toast.success("Successfully signed in!", {
-      position: toast.POSITION.TOP_CENTER,
-      autoClose: 3000,
-    });
+    alert('Account created successfully!');
     closeSignUpForm();
   };
 
@@ -56,9 +50,7 @@ const Navbar = () => {
     e.preventDefault();
 
     if (!email || !password) {
-      toast.error("Email and password are required!", {
-        position: toast.POSITION.TOP_CENTER,
-      });
+      ;
       return;
     }
 
@@ -70,23 +62,16 @@ const Navbar = () => {
 
       if (response.status === 200) {
         console.log("successfull");
-        toast.success("Successfully logged in!", {
-          position: toast.POSITION.TOP_CENTER,
-          autoClose: 3000,
-        });
+        alert("Sucessfully Logged In");
         closeLoginForm();
         // Perform any additional actions after successful login
       } else {
         console.log("failed to login");
-        toast.error("Invalid Email or Password", {
-          position: toast.POSITION.TOP_CENTER,
-        });
+        alert("Invalid Email or Password")
       }
     } catch (error) {
       console.error("Error during login:", error);
-      toast.error("An error occurred during login.", {
-        position: toast.POSITION.TOP_CENTER,
-      });
+      alert("An error occurred during login.")
     }
   };
 
