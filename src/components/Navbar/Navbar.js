@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import {
   AiOutlineClose,
@@ -9,7 +10,6 @@ import Modal from "react-modal";
 import logo from "../../components/images/logo.png";
 import styles from "./Navbar.module.css";
 import SignUpForm from "./SignUp";
-import axios from "axios"; 
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -41,16 +41,14 @@ const Navbar = () => {
   };
 
   const handleSignUpSuccess = () => {
-    alert('Account created successfully!');
+    alert("Account created successfully!");
     closeSignUpForm();
   };
-
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
 
     if (!email || !password) {
-      ;
       return;
     }
 
@@ -67,11 +65,11 @@ const Navbar = () => {
         // Perform any additional actions after successful login
       } else {
         console.log("failed to login");
-        alert("Invalid Email or Password")
+        alert("Invalid Email or Password");
       }
     } catch (error) {
       console.error("Error during login:", error);
-      alert("An error occurred during login.")
+      alert("An error occurred during login.");
     }
   };
 
@@ -182,7 +180,7 @@ const Navbar = () => {
           <div className={styles.signupFormContainer}>
             {/* Your login form component here */}
             <form onSubmit={handleLoginSubmit}>
-            <label htmlFor="email">Email:</label>
+              <label htmlFor="email">Email:</label>
               <input
                 type="text"
                 id="email"
