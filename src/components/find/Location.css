@@ -1,0 +1,98 @@
+/* Location.css */
+
+.form-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.car-details {
+    background-color: #f3f3f3;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.form-content {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.form-content label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 18px;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.form-content button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.form-content button[type="button"] {
+    background-color: #ccc;
+    margin-top: 12px;
+    /* Increased margin-top */
+}
+
+.form-content button:hover {
+    background-color: #333;
+}
+
+/* Styling for the Popup overlay */
+.popup-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    max-width: 812px;
+    padding: 30px;
+    background: linear-gradient(180deg, rgb(84, 83, 84), rgb(0, 0, 7));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.car-details img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pop{
+    width: 100%;
+    display: block;
+    color: #f7f4f4;
+    background: linear-gradient( gray, rgb(54, 50, 50));
+}
