@@ -5,7 +5,6 @@ import Find from "./components/find/Find";
 import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Luxury from "./components/luxury/Luxury";
-// import SignUpForm from "./components/Navbar/SignUp";
 function App() {
   return (
     <div className="App">

@@ -1,10 +1,18 @@
 // Card.js
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Find.module.css';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./Find.module.css";
 
-const Card = ({ image, make, capacity, bagCapacity, mileage, transmission, price }) => {
+const Card = ({
+  image,
+  make,
+  capacity,
+  bagCapacity,
+  mileage,
+  transmission,
+  price,
+}) => {
   return (
     <div className={styles.card}>
       <img src={image} alt={make} />
@@ -20,7 +28,7 @@ const Card = ({ image, make, capacity, bagCapacity, mileage, transmission, price
   );
 };
 
-Card.propTypes = {            
+Card.propTypes = {
   image: PropTypes.string.isRequired,
   make: PropTypes.string.isRequired,
   capacity: PropTypes.number.isRequired,

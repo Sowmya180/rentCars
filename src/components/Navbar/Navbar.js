@@ -29,7 +29,7 @@ const Navbar = () => {
     e.preventDefault();
     setShowLoginForm(true);
     setNav(false);
-    setShowSignUpForm(false); // Close signup form if open
+    setShowSignUpForm(false); 
   };
 
   const closeSignUpForm = () => {

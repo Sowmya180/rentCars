@@ -1,134 +1,131 @@
-.navbar{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
+.menu {
+  display: flex;
+  align-items: center;
 }
 
 .menu li {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-.navbar a{
-    font-size: .8rem;
-    font-weight: 600;
-    text-decoration: none;
-    position: relative; 
-    transition: color 0.3s ease-in-out; 
+.navbar a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   transition: width 0.4s ease-in-out;
   left: 0;
-  bottom: -3px; /* Adjust the distance of the underline from the text */
+  bottom: -3px;
   width: 100%;
-  height: 2px; /* Adjust the thickness of the underline */
-  background-color: #333; /* Adjust the color of the underline */
+  height: 2px;
+  background-color: #333;
 }
 
 .navbar a:hover {
-  color: #555; /* Adjust the color on hover */
+  color: #555;
 }
-
 
 .navbar a:hover::after {
   width: 100%;
 }
 
-
-.mobile_btn{
-    display: none;
+.mobile_btn {
+  display: none;
 }
 
-@media screen and (max-width:720px) {
-    .mobile_btn{
-        display: block;
-        /* position: absolute; */
-        right:1rem;
-        cursor: pointer;
-        z-index: 10;
-    }
+@media screen and (max-width: 720px) {
+  .mobile_btn {
+    display: block;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
 
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: fixed;
-        left: -100%;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        z-index: 10;    /* overlapping elements */
-        transition: left 1s;
-    }
-    .active{
-        left: 0;
-    }
-    .navbar a{
-        font-size: 1rem;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
-    }
-}
-.signupFormOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .signupFormContainer {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .signupFormContainer h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .signupFormContainer form {
+  .menu {
     display: flex;
     flex-direction: column;
-  }
-  
-  .signupFormContainer label {
-    margin-bottom: 0.5rem;
-  }
-  
-  .signupFormContainer input {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .signupFormContainer button {
-    background-color: #333;
+    justify-content: center;
+    position: fixed;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
     color: white;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    z-index: 10;
+    transition: left 1s;
+  }
+  .active {
+    left: 0;
+  }
+  .navbar a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+  }
+}
+.signupFormOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupFormContainer {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signupFormContainer h2 {
+  margin-bottom: 1rem;
+}
+
+.signupFormContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupFormContainer label {
+  margin-bottom: 0.5rem;
+}
+
+.signupFormContainer input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signupFormContainer button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -154,30 +151,28 @@ input {
 
 button {
   padding: 10px;
-  background-color: #007bff; /* Blue color for the submit button */
-  color: #fff; /* White text color for the submit button */
+  background-color: #007bff;
+  color: #fff;
   border: none;
- 
+
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue color on hover */
+  background-color: #0056b3;
 }
 
-/* Close button style */
 button.closeButton {
   position: absolute;
   top: 10px;
   right: 10px;
- 
+
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: #000;
 }
 
-button.submit{
-
+button.submit {
 }

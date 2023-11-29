@@ -1,63 +1,63 @@
 .driver {
-    max-width: 1040px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 1rem;
+  max-width: 1040px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .driver img {
-    max-width: 512px;
+  max-width: 512px;
 }
 
 .driver h2 {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 
 .driver span {
-    color: rgb(149, 147, 151);
+  color: rgb(149, 147, 151);
 }
 
 .driver p {
-    font-size: 1rem;
-    color: #333;
-    font-weight: 500;
-    padding: 1.5rem 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  padding: 1.5rem 0;
 }
 
 .driver button {
-    background-color: #18181a;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 12px 18px;
-    border: none;
+  background-color: #18181a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border: none;
 }
 
 .driver button:hover {
-    background-color: #828080;
-    transition: background-color 1s;
-    color: rgb(26, 25, 25);
-    box-shadow: 20px grey;
+  background-color: #828080;
+  transition: background-color 1s;
+  color: rgb(26, 25, 25);
+  box-shadow: 20px grey;
 }
 
 @media screen and(max-width: 920px) {
-    .driver {
-        grid-template-columns: 1fr;
-    }
+  .driver {
+    grid-template-columns: 1fr;
+  }
 
-    .driver img {
-        max-width: 80%;
-        margin: auto;
-    }
+  .driver img {
+    max-width: 80%;
+    margin: auto;
+  }
 
-    .driver .left {
-        display: flex;
-        justify-content: center;
-    }
+  .driver .left {
+    display: flex;
+    justify-content: center;
+  }
 
-    .driver h2 {
-        padding-top: 10%;
-    }
+  .driver h2 {
+    padding-top: 10%;
+  }
 }

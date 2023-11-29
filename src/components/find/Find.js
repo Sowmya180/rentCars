@@ -1,19 +1,16 @@
-
-
-import React, { useState } from 'react';
-import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from './Card';
-import styles from './Find.module.css';
-import './Location.css';
-import LocationForm from './LocationForm';
+import React, { useState } from "react";
+import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Card from "./Card";
+import styles from "./Find.module.css";
+import "./Location.css";
+import LocationForm from "./LocationForm";
 
 const Find = () => {
-  
   const [showForm, setShowForm] = useState(false);
   const [selectedCar, setSelectedCar] = useState(null);
 
@@ -52,10 +49,10 @@ const Find = () => {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
-        
+          onSlideChange={() => console.log("slide change")}
         >
-          <SwiperSlide id='carsSection'
+          <SwiperSlide
+            id="carsSection"
             onClick={() =>
               handleClick({
                 image:
