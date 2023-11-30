@@ -1,12 +1,15 @@
 .find {
   max-width: 1040px;
   margin: auto;
+  
 }
 
 .heading h1 {
   font-size: 4rem;
   text-align: center;
-  padding: 2rem;
+  padding: 4rem;
+  padding-top: 17rem;
+  color: rgb(14, 13, 13);
 }
 
 .heading p {
